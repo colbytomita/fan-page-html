@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Colby Tomita, Database Systems and Web Integrations, 4/10/24 -->
+    <title>Japan Fan Page</title>
+    <style>
+      body {font-family: Consolas, monospace;
+            background-color: #f7efe5;
+            margin: 0;
+            top: 10px;}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#shinkansen">Shinkansen</a></li>
+          <!-- add a find a flight here to have a table thats at least 3x5 -->
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="header-placeholder-white"></div>
+      <div class="header-placeholder-beige"></div>
+      <div class="section-container">
+        <div class="home-container">
+          <img id="japan-logo-img" src="images\japan-logo.png" alt="Japan" />
+          <div id="home-text">
+            <h1><b>Japan Fan Page</b></h1>
+            <h2>By Colby Tomita</h2>
+          </div>
+          
+          <img id="japan-flag-img" src="images\japan-flag.png" alt="Japan" />
+        </div>
+        <!-- <p>This is a fan page for Japan.</p> -->
+      </div>
+    </section>
+    <section id="destinations">
+      <div class="header-placeholder-white"></div>
+      <div class="section-container">
+        <h1>Destinations</h1>
+        <div class="destination-container">
+          <div class="destination">
+            <h2>Kyoto</h2>
+            <img src="images\kyoto.jpg" alt="Kyoto" />
+            <ul>
+              <li>Population: 1.5 million</li>
+              <li>Former imperial capital of Japan for over 1,000 years</li>
+              <li>Located in the Kansai region</li>
+            </ul>
+          </div>
+          <div class="destination">
+            <h2>Tokyo</h2>
+            <img src="images\tokyo.jpg" alt="Tokyo" />
+            <ul>
+              <li>Population: 14 million</li>
+              <li>Most populous metropolitan area in the world</li>
+              <li>Located in the Kantō region</li>
+            </ul>
+          </div>
+          <div class="destination">
+            <h2>Osaka</h2>
+            <img src="images\osaka.jpg" alt="Osaka" />
+            <ul>
+              <li>Population: 3 million</li>
+              <li>Second largest metropolitan area in Japan</li>
+              <li>Located in the Kansai region</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="shinkansen">
+      <div class="header-placeholder-white"></div>
+      <div class="section-container">
+        <h1>Shinkansen</h1>
+        <p>
+          The Shinkansen (a.k.a. Bullet Train) is a network of high-speed
+          railway lines in running throughout Japan. While it may not be the
+          fastest way to travel in Japan, it is the most convenient and
+          comfortable way to travel. The Shinkansen is most known for its
+          high-speed trains that can reach speeds of up to 320 km/h (200 mph).
+        </p>
+        <h2>Cost Breakdown</h2>
+        <div class="shinkansen-container">
+          <img
+            id="shinkansen-img"
+            src="images\shinkansen.png"
+            alt="Shinkansen" />
+          <div id="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th id="table-title" colspan="2">SHINKANSEN TICKET COST</th>
+                </tr>
+
+                <tr>
+                  <th>One-Way</th>
+                  <th>Round-Trip</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>~$150</td>
+                <td>~$300</td>
+              </tr>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th id="table-title" colspan="2">JAPAN RAIL PASS</th>
+                </tr>
+
+                <tr>
+                  <th>Days</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>7</td>
+                <td>$350</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>$560</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>$700</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p>
+          You can follow this
+          <a
+            href="https://global.jr-central.co.jp/en/onlinebooking/contents/shinkansen/?utm_source=google&utm_medium=ppc&utm_campaign=2023usa_shinkansen&utm_content=g_l_s_shin_c_02&gad_source=1&gclid=Cj0KCQjwlN6wBhCcARIsAKZvD5h7p0kPsnQPmyVzUBKwuP5Q9NY_j1Y8HRP2hHSQdIqD663rIgDeEFcaAqD4EALw_wcB"
+            >link</a
+          >
+          to the official Shinkansen Japan website.
+        </p>
+      </div>
+    </section>
+    <section id="contact-me">
+      <div class="header-placeholder-beige"></div>
+      <div class="section-container">
+        <div class="contact-body">
+          <h1>Contact</h1>
+          <div class="contact-container">
+            <p>Send me a message!</p>
+            <form class="contact-form" method="get">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="e.g., John" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="name@company.com" />
+              </div>
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header-placeholder-white"></div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Colby Tomita</p>
+      </div>
+    </footer>
+  </body>
+</html>
